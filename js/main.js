@@ -1,3 +1,8 @@
+var audio = document.createElement('audio');
+var video = document.getElementById('video');
+var button = document.getElementById('play');
+var data = document.getElementById('data');
+
 app = {
 
 	init: function(){
@@ -7,16 +12,23 @@ app = {
 	},
 
 	checkLoadStatus:function(){
+		// check if video is loaded
+		if ( video.readyState === 4 ) {
+			// it's loaded
+		}
+
+		// check if audio is loaded
+
+		// add play button
 
 	},
+
+	// check sync using request animation
+	
 };
 
 console.log('hello');
 
-	var audio = document.createElement('audio');
-	var video = document.getElementById('video');
-	var button = document.getElementById('play');
-	var data = document.getElementById('data');
 
 function playSound(url){
 	audio.style.display = "none";
