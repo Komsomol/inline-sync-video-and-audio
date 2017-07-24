@@ -4,15 +4,15 @@
 	<title>Video and Sound Sync</title>
 </head>
 <body>
-	<video id='video' class="video-inline" playsinline muted>
+	<video id='video' playsinline muted width="640px" height="480px">
 		<source type="video/mp4" src="video/video.mp4">
+		Your browser does not support the video element.
 	</video>
 
-<!-- 	<audio controls>
-		<source src="video/sound.mp4" type="audio/ogg">
-		<source src="video/sound.mp4" type="audio/mpeg">
+	<audio id='audio'>
+		<source src="video/audio.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
-	</audio> -->
+	</audio>
 
 	<button id="play">PLAY</button>
 	<div id="data">
